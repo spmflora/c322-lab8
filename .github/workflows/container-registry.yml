@@ -34,6 +34,5 @@ jobs:
       - name: Build and push the image
         run: |
           docker login --username spmflora --password ${{secrets.ACCESS_TOKEN}} ghcr.io
-          docker build -t ghcr.io/spmflora/c322-lab8:latest --file Dockerfile .  
-          docker push ghcr.io/spmflora/c322-lab8:latest 
-
+          docker build -t ghcr.io/spmflora/ducks-service:latest --file Dockerfile .  
+          docker push ghcr.io/spmflora/ducks-service:latest
